@@ -1,3 +1,11 @@
+::: panel-info Tip
+Use [`create-react-app`](https://github.com/facebookincubator/create-react-app) with `auth0-react-scripts` to create a React application with authentication.
+
+```sh
+create-react-app my-app --scripts-version auth0-react-scripts
+```
+:::
+
 ## 1. Create an AuthService Class
 
 The best way to have authentication utilities available across your application is to create a helper class. With the class in place, you can share an instance of it by passing it as a prop.
@@ -136,7 +144,7 @@ For this to work, `auth` needs to be included as a prop, which can be done from 
 
 ## 4. Send `auth` from Router to Container Children
 
-To use the `auth` parameter in various child components, it needs to be propagated down from from the `Container` component. 
+To use the `auth` parameter in various child components, it needs to be propagated down from from the `Container` component.
 
 ```javascript
 // ./src/views/Main/Container.js
